@@ -51,7 +51,6 @@ def bds_dothi():
                     dchi = post.find_element(By.CSS_SELECTOR, ".location").text.strip()
                 except:
                     dchi = "Không có thông tin"
-                # Lấy mô tả chi tiết
                 driver.execute_script("window.open('');")
                 driver.switch_to.window(driver.window_handles[1])
                 driver.get(link)
